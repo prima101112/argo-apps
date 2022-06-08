@@ -6,4 +6,14 @@ plugins:
   scorecard.sdk.operatorframework.io/v2: {}
 projectName: argo-apps
 repo: github.com/prima101112/argo-apps
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: primaadi.net
+  group: cache
+  kind: Memcached
+  path: github.com/prima101112/argo-apps/api/v1alpha1
+  version: v1alpha1
 version: "3"
